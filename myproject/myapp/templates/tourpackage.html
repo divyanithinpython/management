@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <main>
+
+
+<div class="mastfoot"><h1>Our Destinations </h1>
+
+
+
+             
+                
+                 
+                    <p><a href="{% url 'package_location_detail'location='kashmir' %}"> 
+                     <img src="{%static 'gal/kashmir.jpg'%} "alt="Kashmir" height="200" width="300"><br>Kashmir 7days/5nights <br>View Details....</a></p>
+    
+    
+     
+        
+                    <p><a href="{%url 'packagedetail' % }">
+                     <img src="{%static    'gal/Singapore.jpg'%}" alt="Thailand" height="300" width="300"> <br>Singapore 7days/5nights<br>View Details....</a></p>
+    
+    
+         
+                     <p><a href="{%url 'packagedetail' %}">
+                        <img src="{%static  'gal/Thailand.jpg'%} "height="300" width="300"><br>Thailand 6days/4nights<br> View Details...</p></a>
+           
+                
+            
+    
+        
+    
+</div>
+    </main>
+
+
+    
+   
+   
+
+
+    
+</body>
+</html>

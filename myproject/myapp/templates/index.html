@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agatha Tourism</title>
+        
+    <link rel="stylesheet"  type="text/css" href="{%static  'style.css'%}">
+</head>
+<body>
+    <h1> AGADHA TOUR-PACKAGES</h1>
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul class="horizontal">               
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Our Products</a>
+                        <ul>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">HTC</a></li>
+                            <li><a href="#">Nokia</a></li>
+                            <li><a href="#">Samsung</a></li>
+                        </ul>
+                   </li>
+                   <li><a href="#">Environment</a></li>
+                   <li><a href="#">Latest News</a></li>
+                   <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="search" method="POST" action="">
+            {%csrf_token%}
+            <input type="search" placeholder="Search. packages...">
+            <div class="col-md-3 ffb">
+                <select name="" id="" class="form-control">
+                    <option value="">Travel Destinaton</option>
+                    <option value="1">Kashmir</option>
+                    <option value="2">Singapore</option>
+                    <option value="2">Thailand</option>
+                    <option value="2">Agra</option>
+                </select>
+            </div>
+            <div class="col-md-3 ffb">
+                <input placeholder="Select Date" type="text" class="form-control">
+            </div>
+
+
+            <button type="submit">Search</button>
+        </form>
+        
+        
+                     
+                 
+            
+        
+        
+
+        
+
+        
+           
+        
+            
+
+    </main>
+    <footer>
+        &copy;2022 Tourism Management System
+    
+    </footer>
+    
+</body>
+</html>

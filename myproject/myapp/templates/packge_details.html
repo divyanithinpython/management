@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tour Packages Details</h1>
+    
+    {% for i in package%}
+    {% if i.approved %}
+    
+
+      <h2>{{i.location}}</h2>
+      <img src="{{i.image.url}}">
+      <p>{{i.shortdescription}}</p>
+      <p>{{i.price}}
+      <p>{{i.Dates}}
+    
+       
+     <p>{{i.fulldescription}}</p>
+    <a href="{% url 'book' %}">Book Now</a>
+    <ul>
+        <li>Approved:{{i.approved}}</li>
+    </ul>
+    {% endif %}
+    {% endfor %}
+    
+
+
+
+
+
+    
+
+        
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>

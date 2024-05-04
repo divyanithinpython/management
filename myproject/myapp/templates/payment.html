@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in us%}
+    <p>{{i.firstname}}</p>
+    <p>{{i.lastname}}</p>
+    <p>{{i.email}}</p>
+    <p>if the details are correct go to payment</p>
+    {% endfor %}
+    
+
+
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NwD5b7fG6rrN4d" async> </script> </form>
+    
+</body>
+</html>
